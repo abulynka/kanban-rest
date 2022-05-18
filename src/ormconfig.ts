@@ -18,4 +18,10 @@ export default {
   logging: false,
   entities: ['src/resources/**/**.entity{.ts,.js}'],
   migrations: ['./migrations/*.ts'],
+  "ssl": true,
+  "extra": {
+    "ssl": {
+      "rejectUnauthorized": false
+    }
+  },
 } as ConnectionOptions;
