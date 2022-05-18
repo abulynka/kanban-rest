@@ -13,6 +13,7 @@ heroku config:set JWT_SECRET_KEY=secret-key
 heroku config:set SALT_SIZE=10
 heroku config:set USE_FASTIFY=true
 heroku config:set USE_NPM_INSTALL=true
+heroku config:set NODE_ENV=development
 heroku git:remote -a kanban-rest-rss
 git push heroku source:master
 
