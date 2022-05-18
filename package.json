@@ -22,7 +22,7 @@
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts",
     "typeorm:migration": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts migration:run",
     "typeorm:generate": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts migration:generate -n newTables -d migrations",
-    "heroku-prebuild": "npm install --only=dev --no-shrinkwrap && npm run build && mkdir logs"
+    "heroku-prebuild": "npm install --only=dev --no-shrinkwrap && npm run build && mkdir logs && npm run typeorm:migration"
   },
   "keywords": [
     "rs",
