@@ -19,7 +19,7 @@ async function _initApp(isFastify: boolean, isLogger: boolean) {
     app.register(contentParser);
     return app;
   }
-  const app = await NestFactory.create(AppModule, { logger: isLogger ? ['verbose'] : false });
+  const app = await NestFactory.create(AppModule, { logger: isLogger ? ['verbose'] : false, cors: false });
   return app;
 }
 
