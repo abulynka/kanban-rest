@@ -34,7 +34,7 @@
   ],
   "license": "ISC",
   "engines": {
-    "node": ">=16.0.0 <17"
+    "node": ">=16.0.0 <16.13.2"
   },
   "jest": {
     "testEnvironment": "node",

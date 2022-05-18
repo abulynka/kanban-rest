@@ -12,7 +12,10 @@ heroku config:set LOG_INFO_LEVEL=info
 heroku config:set JWT_SECRET_KEY=secret-key
 heroku config:set SALT_SIZE=10
 heroku config:set USE_FASTIFY=true
+heroku config:set USE_NPM_INSTALL=true
 heroku git:remote -a kanban-rest-rss
 git push heroku source:master
+
+heroku logs --tail
 ```
 
