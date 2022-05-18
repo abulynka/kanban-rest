@@ -8,6 +8,7 @@ heroku create --region eu kanban-rest-rss
 
 heroku plugins:install heroku-config
 heroku addons:create heroku-postgresql:hobby-dev
+heroku pg:credentials:url DATABASE
 
 heroku config:set NPM_CONFIG_PRODUCTION=false
 heroku config:set LOG_CONSOLE=false
